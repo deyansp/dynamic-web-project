@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Lobster|Montserrat:300|Oswald:300');
+
+html {
+    scroll-behavior: smooth;
+}
+html, body {
+    height:100%;
+    width:100%;
+}
+a:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.navbar {
+    padding: .8rem;
+    background-color: transparent !important;
+    overflow: hidden;
+    z-index: 10;
+}
+.navbar-nav li {
+    padding-right: 20px;
+    padding-left:10px;
+}
+.nav-link {
+    font-family:'Lobster', cursive;
+    font-size: 1.4em !important;
+    color: white !important;
+    text-shadow: 1px 1px 1px #000;
+}
+.modal-link {
+    color: #373737 !important;
+    text-shadow: 1px 1px 1px #fff !important;
+}
+.navbar-brand {
+    padding-top: 0;
+    font-family: 'Bungee', cursive;
+    font-size: 2.2em !important;
+    color: #fff !important;
+    text-shadow: -3px 4px 3px black;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-light .navbar-toggler {
+    background-color: #fff8;
+}
+.scrolledNav {
+    background-color: #343638 !important;
+    width:100% !important;
+    padding:0rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    transition: 0.2s;
+}
+.overlay {
+    display: block !important;
+    position: fixed;
+    z-index: 9999;
+    height: 100%;
+    width:100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0); 
+    transition: 0.4s;
+}
+.overlay-ul {
+    position: absolute;
+    top: 30%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px;
+    flex-direction:column !important;
+}
+.overlay-a {
+    font-size: 3rem;
+}
+.overlay-close-button::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00d"; 
+  position: relative;
+  color: #fff;
+  top: 0px;
+  left: 0px;
+  font-size:2rem;
+}
+.disable-scroll {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden;
+}
+p {
+    font-family: 'Montserrat', cursive;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+}
+.carousel-caption {
+    margin-bottom:2.5rem;
+}
+.carousel-caption h1 {
+    font-size:500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px black;
+}
+.carousel-caption h3 {
+    font-size: 450%;
+    font-weight:500;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px black;
+    padding-bottom: 2rem;
+}
+.content-heading {
+    font-family: 'Oswald', cursive;
+    margin-top: 1rem;
+}
+#about-section {
+    margin-bottom: 2rem;
+}
+.about-text {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#ticket-section {
+    background-color: #E6F6F3;
+    padding-bottom: 2rem;
+}
+footer {
+    text-align: center !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+footer a {
+    margin-right: 0.3rem;
+}
+footer a:last-child {
+    margin-right:0;
+}
+.row {
+    margin-left:0;
+    margin-right:0; 
+}
+
+/*---Media Queries --*/
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.8em !important;
+    }
+    
+     .overlay-a {
+    font-size: 2rem;
+}
+     .carousel-caption h3 {
+        font-size: 350%;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 10px black;
+        padding-bottom: 2rem;
+    }
+    
+    .content-heading {
+        font-size: 3rem;
+    }
+   
+}
+@media (max-width: 576px) {
+    .carousel-caption h3 {
+        font-size: 300%;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 10px black;
+        padding-bottom: 2rem;
+    }
+    .overlay-a {
+    font-size: 1.6rem;
+    }
+    .content-heading {
+        font-size: 2.8rem;
+    }
+ }
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+} 
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+
+

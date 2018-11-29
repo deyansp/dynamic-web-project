@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Lobster|Montserrat:300|Oswald:300');
+
+html {
+    scroll-behavior: smooth;
+}
+html, body {
+    height:100%;
+    width:100%;
+}
+a:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.navbar {
+    background-color: #343638 !important;
+    width:100% !important;
+    padding:0rem;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.navbar-nav li {
+    padding-right: 20px;
+    padding-left:10px;
+}
+.nav-link {
+    font-family:'Lobster', cursive;
+    font-size: 1.4em !important;
+    color: white !important;
+    text-shadow: 1px 1px 1px #000;
+}
+.jumbotron {
+    background-color: #17b8679c;
+}
+#welcome {
+    transform: translateY(10%);
+}
+#addTourDate {
+    margin-bottom: 0.6rem;
+}
+.navbar-brand {
+    padding-top: 0;
+    font-family: 'Bungee', cursive;
+    font-size: 2.2em !important;
+    color: #fff !important;
+    text-shadow: -3px 4px 3px black;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-light .navbar-toggler {
+    background-color: #fff8;
+}
+.table {
+    text-align: center;
+}
+
+p {
+    font-family: 'Montserrat', cursive;
+}
+
+.content-heading {
+    font-family: 'Oswald', cursive;
+    margin-top: 1rem;
+}
+
+.row {
+    margin-left:0;
+    margin-right:0; 
+}
+
+/*---Media Queries --*/
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.8em !important;
+    }
+    
+     .overlay-a {
+    font-size: 2rem;
+}
+     .carousel-caption h3 {
+        font-size: 350%;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 10px black;
+        padding-bottom: 2rem;
+    }
+    
+    .content-heading {
+        font-size: 3rem;
+    }
+   
+}
+@media (max-width: 576px) {
+    .overlay-a {
+    font-size: 1.6rem;
+    }
+    
+    .content-heading {
+        font-size: 2.8rem;
+    }
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
